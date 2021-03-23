@@ -13,6 +13,9 @@ services:
       memlock:
         soft: -1
         hard: -1
+      nofile:
+        soft: 65535
+        hard: 65535 
     volumes:
       - data:/usr/share/elasticsearch/data
     ports:
