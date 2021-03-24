@@ -8,10 +8,5 @@ output.kafka:
   enabled: true
   hosts: ["kafka:9092"]
   topic: 'logs'
-  partition.round_robin:
-    reachable_only: false
-  required_acks: 1
-  compression: gzip
-  max_message_bytes: 1000000
 
 
