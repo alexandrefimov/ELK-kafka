@@ -42,7 +42,6 @@ services:
     volumes:
       - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
     ports:
-      - 9600:9600
       - 5044:5044
     networks:
       - elastic
