@@ -8,5 +8,4 @@ output.kafka:
   enabled: true
   hosts: ["kafka:9092"]
   topic: 'logs'
-
-
+  required_acks: 1
